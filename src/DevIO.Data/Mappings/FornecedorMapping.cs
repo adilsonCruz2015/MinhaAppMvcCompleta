@@ -21,7 +21,7 @@ namespace DevIO.Data.Mappings
             // 1 : 1 => Fornecedor : Endereco
             builder.HasOne(f => f.Endereco)
                 .WithOne(e => e.Fornecedor)
-                .HasForeignKey<Endereco>(e => e.FormecedorId);
+                .HasForeignKey<Endereco>(e => e.FornecedorId);
                 
 
             // 1 : N => Fornecedor : Produtos

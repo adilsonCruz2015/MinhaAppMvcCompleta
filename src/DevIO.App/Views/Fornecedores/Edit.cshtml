@@ -4,13 +4,13 @@
     ViewData["Title"] = "Edirar Fornecedor";
 }
 
-<h1>ViewData["Title"]</h1>
+<h1>@ViewData["Title"]</h1>
 
 <hr />
 
 <form asp-action="Edit">
 
-<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <vc:summary></vc:summary>
 
 <input type="hidden" asp-for="Id" />
 
@@ -48,7 +48,7 @@
 </div>
 </form>
 
-<div>
+<div id="EnderecoTarget">
     <partial name="_DetalisEndereco"/>
 </div>
 
@@ -72,7 +72,7 @@
 
 <script>
     $(document).ready(function () {
-        AjaxModa();
+        AjaxModal();
     });
 </script>
 

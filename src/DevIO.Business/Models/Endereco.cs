@@ -6,7 +6,7 @@ namespace DevIO.Business.Models
 {
     public class Endereco : Entity
     {
-        public Guid FormecedorId { get; set; }
+        public Guid FornecedorId { get; set; }
 
         public string Logradouro { get; set; }
 
